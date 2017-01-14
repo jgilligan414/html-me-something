@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+    position: fixed;
+    z-index: auto;
+}
+nav {
+    /* setting margins for a responsive site */
+    margin-left: 1em;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+nav li a {
+    text-decoration: none;
+    color: #636466;
+    /* space out each link */
+    padding-bottom: 20px;
+}
+#the-girl:hover {
+    color: #48A9A6;
+}
+#her-work:hover {
+    color: #4281a4;
+}
+#her-contact:hover {
+    color: #de3c4b;
+}
+main {
+    margin: 0 0 0 25em;
+}
+article {
+    height:auto;
+}
+.section-title {
+    font-family: 'Antic Slab', serif;
+    font-size: 60px;
+    padding-top: 30px;
+	padding-left: 15px;
+	color: white;
+}
+#grid{
+	overflow: hidden;
+	margin: 1em auto;
+	text-align: center;
+}
+.tile {
+    display: inline-block;
+    float: left;
+    width: 33%;
+    height: 50%;
+	padding-bottom: 25%;
+	position: relative;
+	border: 1px solid;
+	border-color: #48a9a6;
+}
+.tile-content {
+	position: absolute;
+	padding: 45px;
+}
+.tile-content img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.caption{
+	max-width: 100%;
+	max-height: 100%;
+}
+.tile-content .caption {
+	background: #48a9a6;
+	color: white;
+	display: table;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom:100%;
+	z-index: 100;
+}
+
+.tile-content .caption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	vertical-align: middle;
+}
+.tile-content:hover .caption {
+	opacity: 1;
+	bottom: 0;
+}
+.white{
+    background-color: #ffffff;
+}
+.green {
+    background-color: #48a9a6;
+}
+.blue {
+    background-color: #4281a4;
+}
+.red {
+    background-color: #de3c4b;
+}
+.project{
+	border-color: #4281a4;
+	border: 1px solid;
+	height: 300px;
+}
+.contact{
+	height: 100%
+}
+.button {
+	display: inline;
+	float: left;
+	width: 33%;
+	padding-top: 15px;
+}
+footer {
+	font-family: sans-serif;
+	color: #636466;
+	padding-top: 75px;
+	margin: 400px;
+}

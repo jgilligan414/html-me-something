@@ -2,49 +2,64 @@
 <html>
     <head>
         <title>Jaime Gilligan Personal Porfolio</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
     </head>
     <body>
         <header>
             <img src="assets/shape_logo.png" alt="JME logo design by Jaime Gilligan"/>
             <nav>
                 <ul>
-                    <li><a href="#about">The Girl</a></li>
-                    <li><a href="#work">Her Work</a></li>
-                    <li><a href="#contact">Her Contact</a></li>
+                    <li><a href="#about" id="the-girl">The Girl</a></li>
+                    <li><a href="#work" id="her-work">Her Work</a></li>
+                    <li><a href="#contact" id="her-contact">Her Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <article id="about" class="section-title">
-                <h1>The Girl</h1>
-                <div class="tile">
-                    <img src="assets/name_color.png" alt="Hi! I'm Jaime."/>
-                    <p>Hi! I'm Jaime.</p>
-                </div>
-                <div class="tile">
-                    <img src="assets/computer.png" alt="computer icon"/>
-                    <p>I'm a teacher and student of computer science.</p>
-                </div>
-                <div class="tile">
-                    <img src="assets/like.png" alt="heart icon"/>
-                    <p>I love to use my powers of creativity for good.</p>
-                </div>
-                <br/>
-                <div class="tile">
-                    <img src="assets/gateway-arch-eeuu.png" alt="gateway arch icon"/>
-                    <p>You can find me in my hometown of St. Louis, MO.</p>
-                </div>
-                <div class="tile">
-                    <img src="assets/aeroplane.png" alt="television icon"/>
-                    <p>I love to travel and experience new cultures.</p>
-                </div>
-                <div class="tile">
-                    <img src="assets/two-macarons.png" alt="macarons icon"/>
-                    <p>Someday I aspire to bake the perfect macaron.</p>
+            <article id="about">
+                <h1 class="section-title green">The Girl</h1>
+                <div id="grid">
+                    <div class="tile white" id="me">
+                        <div class="tile-content">
+                            <img src="assets/name_color.png" alt="Hi! I'm Jaime."/>
+                            <div class="caption"><p>Hi! I'm Jaime.</p></div>
+                        </div>
+                    </div>
+                    <div class="tile white" id="computer">
+                        <div class="tile-content">
+                            <img src="assets/computer.png" alt="computer icon" width="170px"/>
+                            <div class="caption"><p>I'm a teacher and student of computer science.</p></div>
+                        </div>
+                    </div>
+                    <div class="tile white" id="heart" width="200px">
+                        <div class="tile-content">
+                            <img src="assets/like.png" alt="heart icon" width="170px"/>
+                            <div class="caption"><p>I love to use my powers of creativity for good.</p></div>
+                        </div>
+                    </div>
+                    <div class="tile white" id="arch">
+                        <div class="tile-content">
+                            <img src="assets/gateway-arch-eeuu.png" alt="gateway arch icon" width="200px"/>
+                            <div class="caption"><p>My hometown is St. Louis, MO.</p></div>
+                        </div>
+                    </div>
+                    <div class="tile white" id="tv">
+                        <div class="tile-content">
+                            <img src="assets/aeroplane.png" alt="airplane icon" width="170px"/>
+                            <div class="caption"><p>I love to travel and experience new cultures.</p></div>
+                        </div>
+                    </div>
+                    <div class="tile white" id="macarons">
+                        <div class="tile-content">
+                            <img src="assets/two-macarons.png" alt="macarons icon" width="200px"/>
+                            <div class="caption"><p>Traveling to France has left me with a love for macarons and I hope to someday bake a perfect one at home.</p></div>
+                        </div>
+                    </div>
                 </div>
             </article>
-            <article id="work" class="section-title">
-                <h1>Her Work</h1>
+            <article id="work">
+                <h1 class="section-title blue">Her Work</h1>
                 <div class="project">
 
                 </div>
@@ -55,27 +70,27 @@
 
                 </div>
             </article>
-            <article id="contact" class="section-title">
-                <h1>Her Contact</h1>
+            <article id="contact">
+                <h1 class="section-title red">Her Contact</h1>
                 <div class="button">
                     <a href="mailto:gilligan.jme@gmail.com">
-                        <img src="assets/email.png" alt="email icon"/>
+                        <img src="assets/email.png" alt="email icon" width="100px"/>
                     </a>
                 </div>
                 <div class="button">
                     <a href="https://github.com/jgilligan414">
-                        <img src="assets/github-logo.png" alt="git hub icon"/>
+                        <img src="assets/github-logo.png" alt="git hub icon" width="100px"/>
                     </a>
                 </div>
                 <div class="button">
                     <a href="https://twitter.com/JMGilligan">
-                        <img src="assets/twitter-logo-button.png" alt="twitter icon"/>
+                        <img src="assets/twitter-logo-button.png" alt="twitter icon" width="100px"/>
                     </a>
                 </div>
             </article>
         </main>
         <footer>
-
+            <p>Webpage design by Jaime Gilligan, 2016 &copy</p>
         </footer>
     </body>
 </html>
